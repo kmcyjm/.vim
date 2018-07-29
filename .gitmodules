@@ -1,3 +1,24 @@
 [submodule "pack/dwrm/start/vim-airline"]
 	path = pack/dwrm/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
+[submodule "pack/dwrm/start/vim-multiple-cursors"]
+	path = pack/dwrm/start/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "pack/dwrm/start/nerdtree"]
+	path = pack/dwrm/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "pack/dwrm/start/ale"]
+	path = pack/dwrm/start/ale
+	url = https://github.com/w0rp/ale.git
+[submodule "pack/dwrm/pack/dwrm/start/surround"]
+	path = pack/dwrm/pack/dwrm/start/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "pack/dwrm/start/vim-surround"]
+	path = pack/dwrm/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "pack/dwrm/start/commentary"]
+	path = pack/dwrm/start/commentary
+	url = https://tpope.io/vim/commentary.git
+[submodule "pack/dwrm/start/fugitive"]
+	path = pack/dwrm/start/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
