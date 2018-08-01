@@ -22,3 +22,6 @@
 [submodule "pack/dwrm/start/fugitive"]
 	path = pack/dwrm/start/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "pack/dwrm/start/vim-markdown"]
+	path = pack/dwrm/start/vim-markdown
+	url = https://github.com/gabrielelana/vim-markdown.git
