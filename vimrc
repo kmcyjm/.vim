@@ -38,9 +38,9 @@ set textwidth=120
 " turn syntax highlighting on
 set t_Co=256
 syntax on
-" colorscheme wombat256
+" set colorscheme
+colorscheme murphy
 " turn line numbers on
-
 set number
 " highlight matching braces
 set showmatch
