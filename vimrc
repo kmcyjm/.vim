@@ -3,8 +3,6 @@
 " Author: Gerhard Gappmeier
 "
 
-imap <F5> <C-o> :set number!<CR>
-
 " spell check off
 autocmd VimEnter * set nospell
 
