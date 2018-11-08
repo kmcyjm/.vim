@@ -52,4 +52,4 @@ set comments=sl:/*,mb:\ *,elx:\ */
 " Enhanced keyboard mappings
 "
 " in normal mode F3 will save the file
-nnoremap <F3> :w<CR>
+inoremap <F3> <Esc>:w<CR>
