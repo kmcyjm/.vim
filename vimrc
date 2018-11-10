@@ -2,6 +2,8 @@
 " Description: Optimized for C/C++ development, but useful also for other things.
 " Author: Gerhard Gappmeier
 "
+" set working directory at startup
+cd ~/Dropbox/WorkSpace/c
 
 " spell check off
 autocmd VimEnter * set nospell
@@ -51,3 +53,8 @@ set comments=sl:/*,mb:\ *,elx:\ */
 "
 " in normal mode F3 will save the file
 inoremap <F3> <Esc>:w<CR>
+" use F5, F6 to navigate between tabs
+nnoremap <F5> :tabp<CR>
+nnoremap <F6> :tabn<CR>
+inoremap <F5> :tabp<CR>
+inoremap <F6> :tabn<CR>
