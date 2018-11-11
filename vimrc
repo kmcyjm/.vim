@@ -58,3 +58,5 @@ nnoremap <F5> :tabp<CR>
 nnoremap <F6> :tabn<CR>
 inoremap <F5> :tabp<CR>
 inoremap <F6> :tabn<CR>
+" copy current file path to system clipboard
+nnoremap <F4> :let @+ = expand("%:p")<CR>
