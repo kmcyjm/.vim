@@ -5,6 +5,8 @@
 " set working directory at startup
 cd ~/Dropbox/WorkSpace/c
 
+" open NERDTree when VIM starts
+autocmd vimenter * NERDTree
 " spell check off
 autocmd VimEnter * set nospell
 
