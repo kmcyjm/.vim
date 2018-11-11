@@ -64,7 +64,5 @@ inoremap <F6> :tabn<CR>
 nnoremap <F4> :let @+ = expand("%:p")<CR>
 " move to the split below
 nnoremap <PageDown> <C-w><Down>
-inoremap <PageDown> <C-w><Down>
 " move to the split above
 nnoremap <PageUp> <C-w><Up>
-inoremap <PageUp> <C-w><Up>
