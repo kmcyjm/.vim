@@ -1,6 +1,6 @@
 " VIM Configuration File
-" Description: Optimized for C/C++ development, but useful also for other things.
-" Author: Gerhard Gappmeier
+" Description: VIM config mainly for C/C++ development
+" Author: Jiaming Yi
 "
 " set working directory at startup
 cd ~/Dropbox/WorkSpace/c
