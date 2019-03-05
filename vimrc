@@ -7,6 +7,10 @@ cd ~/Dropbox/WorkSpace/c
 
 " open NERDTree when VIM starts
 autocmd vimenter * NERDTree
+
+" close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 " spell check off
 autocmd VimEnter * set nospell
 
