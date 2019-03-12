@@ -6,7 +6,7 @@
 cd ~/Dropbox/WorkSpace/c
 
 " open NERDTree when VIM starts
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 " spell check off
 autocmd VimEnter * set nospell
 
