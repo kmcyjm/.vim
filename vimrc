@@ -35,7 +35,7 @@ cd ~/Dropbox/Workspace/
 " autocmd vimenter * NERDTree
 
 " close vim if the only window left open is a NERDTree
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " spell check off
 autocmd VimEnter * set nospell
@@ -105,3 +105,5 @@ nnoremap <F4> :let @+ = expand("%:p")<CR>
 nnoremap <PageDown> <C-w><Down>
 " move to the split above
 nnoremap <PageUp> <C-w><Up>
+" open NERDTree window
+nnoremap ; :NERDTreeToggle<CR>
