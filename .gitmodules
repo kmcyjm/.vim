@@ -1,9 +1,0 @@
-[submodule "pack/dwrm/start/vim-airline"]
-	path = pack/dwrm/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
-[submodule "pack/dwrm/start/nerdtree"]
-	path = pack/dwrm/start/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "pack/dwrm/start/ale"]
-	path = pack/dwrm/start/ale
-	url = https://github.com/w0rp/ale.git
