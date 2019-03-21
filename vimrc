@@ -106,4 +106,4 @@ nnoremap <PageDown> <C-w><Down>
 " move to the split above
 nnoremap <PageUp> <C-w><Up>
 " open NERDTree window
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <F12> :NERDTreeToggle<CR>
