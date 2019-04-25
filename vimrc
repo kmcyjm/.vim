@@ -28,6 +28,9 @@ filetype plugin on
 " set status line always on
 set laststatus=2
 
+" disable automatic comment insertion
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 " set working directory at startup
 cd ~/Dropbox/
 
