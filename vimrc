@@ -29,7 +29,7 @@ filetype plugin on
 set laststatus=2
 
 " set working directory at startup
-cd ~/Dropbox/Workspace/
+cd ~/Dropbox/
 
 " open NERDTree when VIM starts
 " autocmd vimenter * NERDTree
