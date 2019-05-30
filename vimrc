@@ -57,7 +57,7 @@ set comments=sl:/*,mb:\ *,elx:\ */
 
 " Enhanced keyboard mappings
 "
-" in normal mode F3 will save the file
+" in insert mode F3 will save the file
 inoremap <F3> <Esc>:w<CR>
 " use F5, F6 to navigate between tabs
 nnoremap <F5> :tabp<CR>
