@@ -18,6 +18,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
+Plug 'tenable/vim-nasl'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -41,7 +42,10 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " spell check off
-autocmd VimEnter * set nospell
+" autocmd VimEnter * set nospell
+hi clear SpellBad
+hi SpellBad gui=underline,bold term=underline,bold cterm=underline,bold
+set spell
 
 " set file encoding
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
