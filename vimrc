@@ -32,7 +32,7 @@ set laststatus=2
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " set working directory at startup
-cd ~/Dropbox/
+" cd ~/Dropbox/
 
 " open NERDTree when VIM starts
 " autocmd vimenter * NERDTree
