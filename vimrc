@@ -43,9 +43,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " spell check off
 " autocmd VimEnter * set nospell
-hi clear SpellBad
-hi SpellBad gui=underline,bold term=underline,bold cterm=underline,bold
-set spell
 
 " set file encoding
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
