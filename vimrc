@@ -71,8 +71,8 @@ set autoindent
 set smartindent
 
 " configure tabwidth and insert spaces instead of tabs
-set tabstop=4        " tab width is 4 spaces
-set shiftwidth=4     " indent also with 4 spaces
+set tabstop=2        " tab width is 4 spaces
+set shiftwidth=2     " indent also with 4 spaces
 set expandtab        " expand tabs to spaces
 
 " wrap lines at 120 chars. 80 is somewhat antiquated with nowadays displays.
@@ -98,6 +98,7 @@ set comments=sl:/*,mb:\ *,elx:\ */
 "
 " in normal mode F3 will save the file
 inoremap <F3> <Esc>:w<CR>
+nnoremap <F3> <Esc>:w<CR>
 " use F5, F6 to navigate between tabs
 nnoremap <F5> :tabp<CR>
 nnoremap <F6> :tabn<CR>
