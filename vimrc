@@ -98,6 +98,7 @@ set comments=sl:/*,mb:\ *,elx:\ */
 "
 " in normal mode F3 will save the file
 inoremap <F3> <Esc>:w<CR>
+nnoremap <F3> <Esc>:w<CR>
 " use F5, F6 to navigate between tabs
 nnoremap <F5> :tabp<CR>
 nnoremap <F6> :tabn<CR>
