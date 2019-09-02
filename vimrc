@@ -91,6 +91,9 @@ set number
 " highlight matching braces
 set showmatch
 
+" highlight all matches
+set hlsearch
+
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
 
