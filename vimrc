@@ -26,6 +26,10 @@ call plug#end()
 " autoload plugins for targeted file type
 filetype plugin on
 
+" ignorecase when search, but when uppercase is detected, switch to case sensitive search
+set ignorecase
+set smartcase
+
 " set status line always on
 set laststatus=2
 
