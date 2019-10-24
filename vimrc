@@ -103,19 +103,22 @@ set comments=sl:/*,mb:\ *,elx:\ */
 
 " Enhanced keyboard mappings
 "
-" in normal mode F3 will save the file
-inoremap <F3> <Esc>:wq<CR>
-nnoremap <F3> <Esc>:wq<CR>
+" F2 save and exit the file
+inoremap <F2> <Esc>:wq<CR>
+nnoremap <F2> <Esc>:wq<CR>
+
+" F3 save the file
+inoremap <F3> <Esc>:w<CR>
+nnoremap <F3> <Esc>:w<CR>
+
+" F4 copy current file path to system clipboard
+nnoremap <F4> :let @+ = expand("%:p")<CR>
+
 " use F5, F6 to navigate between tabs
 nnoremap <F5> :tabp<CR>
 nnoremap <F6> :tabn<CR>
 inoremap <F5> :tabp<CR>
 inoremap <F6> :tabn<CR>
-" copy current file path to system clipboard
-nnoremap <F4> :let @+ = expand("%:p")<CR>
-" move to the split below
-nnoremap <PageDown> <C-w><Down>
-" move to the split above
-nnoremap <PageUp> <C-w><Up>
+
 " open NERDTree window
 nnoremap <F12> :NERDTreeToggle<CR>
