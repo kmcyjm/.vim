@@ -19,6 +19,9 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
 Plug 'tenable/vim-nasl'
+Plug 'scrooloose/nerdcommenter'
+Plug 'mileszs/ack.vim'
+Plug 'vim-scripts/taglist.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -122,3 +125,6 @@ inoremap <F6> :tabn<CR>
 
 " open NERDTree window
 nnoremap <F12> :NERDTreeToggle<CR>
+
+" use Ag to search
+let g:ackprg = 'ag --nogroup --nocolor --column'
