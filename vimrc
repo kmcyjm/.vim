@@ -126,5 +126,9 @@ inoremap <F6> :tabn<CR>
 " open NERDTree window
 nnoremap <F12> :NERDTreeToggle<CR>
 
+" display full path of the current buffer
+nnoremap <F10> :echo expand('%:p')<CR>
+inoremap <F10> :echo expand('%:p')<CR>
+
 " use Ag to search
 let g:ackprg = 'ag --nogroup --nocolor --column'
