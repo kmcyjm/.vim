@@ -10,7 +10,8 @@ Plug 'vim-scripts/c.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
-Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdtree'
@@ -132,3 +133,8 @@ inoremap <F10> :echo expand('%:p')<CR>
 
 " use Ag to search
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" use Command + / to comment out a line
+nnoremap <expr> <leader>c getline('.')[0:1] == '//'
+  \ ? ":s;^\s*//<cr>"
+  \ : "0<insert>//<Esc>"
