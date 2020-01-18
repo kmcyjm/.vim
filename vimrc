@@ -115,8 +115,8 @@ nnoremap <F2> <Esc>:wq<CR>
 inoremap <F3> <Esc>:w<CR>
 nnoremap <F3> <Esc>:w<CR>
 
-" F4 copy current file path to system clipboard
-nnoremap <F4> :let @+ = expand("%:p")<CR>
+" F4 enable/disable line number
+nnoremap <F4> :set invnumber<CR>
 
 " use F5, F6 to navigate between tabs
 nnoremap <F5> :tabp<CR>
