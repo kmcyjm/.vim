@@ -8,21 +8,21 @@ call plug#begin('~/.vim/plugins')
 " Declare the list of plugins.
 Plug 'vim-scripts/c.vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'editorconfig/editorconfig-vim'
+"Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'scrooloose/nerdcommenter'
-Plug 'junegunn/fzf.vim'
-Plug 'mattn/emmet-vim'
-Plug 'scrooloose/nerdtree'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-surround'
-Plug 'w0rp/ale'
+"Plug 'junegunn/fzf.vim'
+"Plug 'mattn/emmet-vim'
+"Plug 'scrooloose/nerdtree'
+"Plug 'terryma/vim-multiple-cursors'
+"Plug 'tpope/vim-eunuch'
+"Plug 'tpope/vim-surround'
+"Plug 'w0rp/ale'
 Plug 'tenable/vim-nasl'
 Plug 'scrooloose/nerdcommenter'
-Plug 'mileszs/ack.vim'
-Plug 'vim-scripts/taglist.vim'
+"Plug 'mileszs/ack.vim'
+"Plug 'vim-scripts/taglist.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -118,23 +118,10 @@ nnoremap <F3> <Esc>:w<CR>
 " F4 enable/disable line number
 nnoremap <F4> :set invnumber<CR>
 
-" use F5, F6 to navigate between tabs
-nnoremap <F5> :tabp<CR>
-nnoremap <F6> :tabn<CR>
-inoremap <F5> :tabp<CR>
-inoremap <F6> :tabn<CR>
+" F5 to create fold, F6/F7 to open/close fold
+nnoremap <F5> zfa{
+nnoremap <F6> zo
+nnoremap <F7> zc
 
 " open NERDTree window
 nnoremap <F12> :NERDTreeToggle<CR>
-
-" display full path of the current buffer
-nnoremap <F10> :echo expand('%:p')<CR>
-inoremap <F10> :echo expand('%:p')<CR>
-
-" use Ag to search
-let g:ackprg = 'ag --nogroup --nocolor --column'
-
-" use Command + / to comment out a line
-nnoremap <expr> <leader>c getline('.')[0:1] == '//'
-  \ ? ":s;^\s*//<cr>"
-  \ : "0<insert>//<Esc>"
