@@ -33,6 +33,12 @@ Plug 'scrooloose/nerdcommenter'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
+" Automatically install missing plugins on startup
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
+
 " autoload plugins for targeted file type
 filetype plugin on
 
