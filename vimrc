@@ -107,7 +107,7 @@ set showmatch
 set hlsearch
 
 " clear last search highlight
-nnoremap <esc> :noh<return><esc>
+nnoremap <F9> :noh<return>
 
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
