@@ -16,9 +16,17 @@ call plug#begin('~/.vim/plugins')
 Plug 'vim-scripts/c.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
-"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+if has('unix')
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+endif
+
+if has('macunix')
+  Plug '/usr/local/opt/fzf'
+endif
+
+Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdcommenter'
-"Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tenable/vim-nasl'
 
