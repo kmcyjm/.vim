@@ -47,7 +47,7 @@ set laststatus=2
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " set working directory at startup
-" cd ~/Dropbox/
+cd ~/nessus-plugins/
 
 " open NERDTree when VIM starts
 " autocmd vimenter * NERDTree
@@ -62,7 +62,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
 " change to file's directory when opening files
-set autochdir
+" set autochdir
 
 " turn off beep
 set noerrorbells
