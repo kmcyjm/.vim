@@ -13,7 +13,7 @@ endif
 call plug#begin('~/.vim/plugins')
 
 " Declare the list of plugins.
-Plug 'vim-scripts/c.vim'
+" Plug 'vim-scripts/c.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 
@@ -28,7 +28,6 @@ endif
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-Plug 'tenable/vim-nasl'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
